@@ -1,59 +1,145 @@
-<div align="center">
-  
-# PRESCRIPTO 👨‍⚕️🏥🤒
-</div>
+# 💊 Prescripto – Full Stack Appointment Booking System
 
-This full stack appointment booking system can be used by a doctor or a hospital. Because in this project I have created 3 level of authentication. 1st one is for Patients, so that patient can login on the website, book appointment with doctor and manage the booked appointment. 2nd one is doctor login, so that doctor can login and check the appointment and their earning. Doctor can update their profile also from dashboard. 3rd one is Admin Dashboard where admin can manages the appointment and admin can also manage the doctor profile.
+**Prescripto** is a full-featured appointment booking platform built for hospitals, clinics, and independent doctors. It provides a three-level authentication system to manage users (patients), doctors, and administrators.
 
-<br/><hr/><br/>
+---
 
-<div align="center">
+## 🚀 Features
 
-## LIVE - DEMO 🌐
-  
-**UI** 👉 [LINK](https://prescripto-frontend-lovat.vercel.app)
+### 👤 Patients
+- Register and login securely
+- Browse available doctors by specialty
+- Book, view, and manage appointments
+- Receive confirmation and updates
 
-**Admin Dashboard** 👉 [LINK](https://prescripto-admin-beta.vercel.app)
-</div>
+### 🩺 Doctors
+- Login to their dedicated dashboard
+- View daily appointment schedule
+- Track earnings and booking history
+- Update personal profile and availability
 
-<br/><hr/><br/>
+### 🛠️ Admin
+- Manage all appointments in the system
+- Add, update, or remove doctor profiles
+- View user-doctor interactions and statistics
 
-<div align="center">
+---
 
-# User Dashboard 👤:
-![UI](https://github.com/user-attachments/assets/f953ae81-7cc8-4b6b-8101-c3aa47d0aada)
+## 🏗️ Tech Stack
 
-<br /><hr /><br />
+### 🌐 Frontend
+- React.js
+- React Router DOM
+- Axios
+- Material UI / Tailwind CSS
 
-# Doctor Panel 🧑‍⚕️:
-![doctor-panel](https://github.com/user-attachments/assets/ed488e0a-a61a-4cb1-b95a-f19b9135f9b2)
+### 🖥️ Backend
+- Node.js
+- Express.js
+- MongoDB (with Mongoose)
+- JWT for Authentication
+- Bcrypt for password hashing
 
-<br /><hr /><br />
+---
 
-# Admin Panel 🎯:
-![admin-panel](https://github.com/user-attachments/assets/5479b3c0-0663-41ec-9fe2-17434249155c)
+## 📁 Project Structure
 
-</div>
+prescripto/
+├── admin/ # Admin dashboard interface
+├── backend/ # Node.js backend with REST APIs
+└── clientend/ # Patient and doctor frontend UI
 
-<br /><hr /><br />
+yaml
+Copy
+Edit
 
-## Author :black_nib:
-- _[NIYIBIZI Elysée](https://linktr.ee/niyibizi_elysee)👨🏿‍💻 | [Github](https://github.com/elyse502) | [Linkedin](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) | [Twitter](https://twitter.com/Niyibizi_Elyse)._
+---
 
-<!--I'm [Elysée NIYIBIZI](https://elyseeniyibizi.me/) 👋
+## 🔐 Authentication Levels
 
-A **super passionate** Rwandan **software engineer** 🤗 And a true cheese 🧀 & chocolate 🍫 lover! 😋 You can reach me at _hi {[AT]} elyseeniyibizi [{D0T}] me_ -->
+1. **Patient Login** – Book/manage appointments  
+2. **Doctor Login** – View appointments, update profile, track earnings  
+3. **Admin Login** – Manage all system data, doctors, and appointments  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/niyibizi-elys%C3%A9e/) [![@phenrysay](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Niyibizi_Elyse) [![pH-7](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/elyse502)
+---
 
-<br /><hr /><br />
+## 🛠️ Installation & Setup
 
-## License 📝
+### Prerequisites
+- Node.js & npm
+- MongoDB (local or Atlas)
+- Git & terminal
+- Code editor (e.g. VS Code)
 
-This project is distributed under [MIT license](https://github.com/elyse502/prescripto/blob/main/LICENSE). Enjoy! 🎉
+### Steps
 
-<br /><br />
+```bash
+# Clone the repository
+git clone https://github.com/your-username/prescripto.git
+cd prescripto
 
+# Setup backend
+cd backend
+npm install
 
+# Setup frontend (clientend)
+cd ../clientend
+npm install
 
+# Setup admin dashboard
+cd ../admin
+npm install
+```
+Environment Variables
+Create a .env file in the /backend folder:
 
+```bash
+PORT=5000
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
+```
+Run the App
+```
+bash
+# Run backend server
+cd backend
+npm start
+
+# Run patient & doctor frontend
+cd ../clientend
+npm start
+
+# Run admin dashboard
+cd ../admin
+npm start
+```
+## 📸 Screenshots
+Add your app screenshots here:
+
+Patient booking UI
+
+Doctor dashboard
+
+Admin panel
+
+## 📌 Future Enhancements
+Email & SMS notifications
+
+Integrated payment gateway
+
+Video consultation module
+
+Patient health history management
+
+## 🤝 Contributing
+Pull requests are welcome. For major changes, please open an issue to discuss what you would like to change.
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## 👨‍💻 Author
+Priye Raj
+3rd Year, Electrical Engineering
+NIT Silchar
+📧 priyer_ug_22@ee.nits.ac.in
+📞 7677640870
